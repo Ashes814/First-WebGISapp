@@ -1,0 +1,104 @@
+<!-- <html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>实例化地图</title>
+    <style>
+        html,
+        body,
+        #viewDiv {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.24/"></script>
+
+    <script>
+        const apiKey1 = 'AAPK3f0719badf7d40c98575015b32c80a09Dur9TO9eKobJqJ7Kmac-V_WvA6dAF-LaNgd0Un5QPti1LxT7OwTLz-2Udp4WD5oZ';
+
+        require([
+            "esri/config",
+            "esri/Map",
+            "esri/views/MapView"
+        ], function (Map, MapView) {
+
+            esriConfig.apiKey = apiKey1;
+            const map = new Map({
+                basemap: "arcgis-nova"
+            });
+
+            const view = new MapView({
+                map: map,
+                center: [-118.805, 34.027],
+                zoom: 13,
+                container: "viewDiv"
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="viewDiv"></div>
+</body>
+</html>
+ -->
+
+
+
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>实例化地图</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+</style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.19/init.js"></script>
+
+  <script>
+    require([
+     "esri/config",
+      "esri/Map",
+      "esri/views/MapView"
+    ], function (esriConfig,Map, MapView) {
+
+      esriConfig.apiKey = 'AAPK3f0719badf7d40c98575015b32c80a09Dur9TO9eKobJqJ7Kmac-V_WvA6dAF-LaNgd0Un5QPti1LxT7OwTLz-2Udp4WD5oZ';
+      const map = new Map({
+        basemap: "arcgis-topographic"
+      });
+
+      const view = new MapView({
+        map: map,
+        center: [-118.805, 34.027],
+        zoom: 13,
+        container: "viewDiv",
+
+      });
+
+    });
+</script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+
+</html>
+
+
